@@ -1,10 +1,45 @@
 .landingwrapper {
-  border: 2px solid green;
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
   gap: 1rem;
+  color: #fff;
+  text-shadow: 0 0 10px cyan;
+  font-family: "Secular One", sans-serif;
+  background: linear-gradient(-45deg, #333, #242020, cyan, #000000);
+  background-size: 400% 400%;
+  -webkit-animation: gradient 15s ease infinite;
+          animation: gradient 15s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
+  50% {
+    background-position: 100% 50%;
+    text-shadow: 0 0 0px cyan;
+  }
+  100% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
+  50% {
+    background-position: 100% 50%;
+    text-shadow: 0 0 0px cyan;
+  }
+  100% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
 }
 .landingwrapper .info {
   margin-left: 2rem;
@@ -17,4 +52,12 @@
 .landingwrapper .info h3 {
   text-transform: uppercase;
   font-size: 3rem;
+}
+.landingwrapper .info h3:nth-child(3) {
+  font-family: "Rubik Microbe", cursive;
+}
+.landingwrapper .landngcssbtn {
+  top: 2%;
+  right: 2%;
+  position: absolute;
 }/*# sourceMappingURL=landing.css.map */

@@ -1,4 +1,11 @@
 .contactWrapper {
-  border: 2px solid blue;
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+  background: rgb(255, 0, 0);
+}
+.contactWrapper a {
+  color: #fff;
 }/*# sourceMappingURL=contact.css.map */
