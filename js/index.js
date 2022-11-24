@@ -5,42 +5,24 @@ let contactWrapper = document.querySelector('.section4');
 let skillsWrapper = document.querySelector('.section2');
 let projectWrapper = document.querySelector('.section3');
 let cssbtn1 = document.querySelector('.landngcssbtn');
-let cssbtn2 = document.querySelector('.skillcssbtn');
-let cssbtn3 = document.querySelector('.projectcssbtn');
 let body = document.querySelector('body');
 let landingcss = false;
-let skillcss = false;
-let projectcss = false;
 
 cssbtn1.addEventListener('click',(e)=>{
      if(!landingcss){
           landingwrapper.classList.add("landingwrapper")
+          skillsWrapper.classList.add("skillsWrapper")
+          projectWrapper.classList.add("projectWrapper")
+          contactWrapper.classList.add("contactWrapper")
           body.classList.add("body")
           landingcss=true;
      }else{
           landingwrapper.classList.remove("landingwrapper")
-          body.classList.remove("body")
-          landingcss=false;
-     }
-})
-cssbtn2.addEventListener('click',(e)=>{
-     if(!skillcss){
-          skillsWrapper.classList.add("skillsWrapper")
-          skillcss=true;
-     }else{
-          skillsWrapper.classList.remove("skillsWrapper")
-          skillcss=false;
-     }
-})
-cssbtn3.addEventListener('click',(e)=>{
-     if(!projectcss){
-          projectWrapper.classList.add("projectWrapper")
-          contactWrapper.classList.add("contactWrapper")
-          projectcss=true;
-     }else{
           projectWrapper.classList.remove("projectWrapper")
           contactWrapper.classList.remove("contactWrapper")
-          projectcss=false;
+          skillsWrapper.classList.remove("skillsWrapper")
+          body.classList.remove("body")
+          landingcss=false;
      }
 })
 
