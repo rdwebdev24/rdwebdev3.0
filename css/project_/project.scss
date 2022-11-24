@@ -7,8 +7,24 @@
      color: #fff;
      position: relative;
      transform: translateY(400%);
-     background: rgb(52, 14, 155);
      gap: 2rem;
+     background: linear-gradient(-45deg, rgb(0, 33, 71), rgb(65, 0, 170), rgb(7, 166, 187), rgb(8, 67, 119));
+     background-size: 300% 300%;
+     animation: gradient 5s ease infinite;
+     @keyframes gradient {
+        0% {
+             background-position: 0% 50%;
+             text-shadow: 0 0 10px cyan;
+        }
+        50% {
+             background-position: 100% 50%;
+             text-shadow: 0 0 0px cyan;
+        }
+        100% {
+             background-position: 0% 50%;
+             text-shadow: 0 0 10px cyan;
+        }
+   }
     
      .projectcards{
           width: 100%;
