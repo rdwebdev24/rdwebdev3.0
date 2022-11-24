@@ -7,5 +7,41 @@
 }
 
 .section {
+  padding: 2rem 0 !important;
   height: 100vh;
+}
+
+.body {
+  background: linear-gradient(-45deg, rgb(0, 33, 71), rgb(65, 0, 170), rgb(7, 166, 187), rgb(8, 67, 119));
+  background-size: 300% 300%;
+  -webkit-animation: gradient 5s ease infinite;
+          animation: gradient 5s ease infinite;
+}
+@-webkit-keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
+  50% {
+    background-position: 100% 50%;
+    text-shadow: 0 0 0px cyan;
+  }
+  100% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
+}
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
+  50% {
+    background-position: 100% 50%;
+    text-shadow: 0 0 0px cyan;
+  }
+  100% {
+    background-position: 0% 50%;
+    text-shadow: 0 0 10px cyan;
+  }
 }/*# sourceMappingURL=index.css.map */

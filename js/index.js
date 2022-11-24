@@ -7,7 +7,7 @@ let projectWrapper = document.querySelector('.section3');
 let cssbtn1 = document.querySelector('.landngcssbtn');
 let cssbtn2 = document.querySelector('.skillcssbtn');
 let cssbtn3 = document.querySelector('.projectcssbtn');
-let label = document.querySelectorAll('.form-check-label');
+let body = document.querySelector('body');
 let landingcss = false;
 let skillcss = false;
 let projectcss = false;
@@ -15,22 +15,20 @@ let projectcss = false;
 cssbtn1.addEventListener('click',(e)=>{
      if(!landingcss){
           landingwrapper.classList.add("landingwrapper")
-          label[0].textContent = "Remove css"
+          body.classList.add("body")
           landingcss=true;
      }else{
           landingwrapper.classList.remove("landingwrapper")
-          label[0].textContent = "Apply css"
+          body.classList.remove("body")
           landingcss=false;
      }
 })
 cssbtn2.addEventListener('click',(e)=>{
      if(!skillcss){
           skillsWrapper.classList.add("skillsWrapper")
-          label[1].textContent = "Remove css"
           skillcss=true;
      }else{
           skillsWrapper.classList.remove("skillsWrapper")
-          label[1].textContent = "Apply css"
           skillcss=false;
      }
 })
@@ -38,12 +36,10 @@ cssbtn3.addEventListener('click',(e)=>{
      if(!projectcss){
           projectWrapper.classList.add("projectWrapper")
           contactWrapper.classList.add("contactWrapper")
-          label[2].textContent = "Remove css"
           projectcss=true;
      }else{
           projectWrapper.classList.remove("projectWrapper")
           contactWrapper.classList.remove("contactWrapper")
-          label[2].textContent = "Apply css"
           projectcss=false;
      }
 })

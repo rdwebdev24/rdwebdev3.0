@@ -8,38 +8,6 @@
   color: #fff;
   text-shadow: 0 0 10px cyan;
   font-family: "Secular One", sans-serif;
-  background: linear-gradient(-45deg, #333, #242020, cyan, #000000);
-  background-size: 400% 400%;
-  -webkit-animation: gradient 15s ease infinite;
-          animation: gradient 15s ease infinite;
-}
-@-webkit-keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-    text-shadow: 0 0 10px cyan;
-  }
-  50% {
-    background-position: 100% 50%;
-    text-shadow: 0 0 0px cyan;
-  }
-  100% {
-    background-position: 0% 50%;
-    text-shadow: 0 0 10px cyan;
-  }
-}
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-    text-shadow: 0 0 10px cyan;
-  }
-  50% {
-    background-position: 100% 50%;
-    text-shadow: 0 0 0px cyan;
-  }
-  100% {
-    background-position: 0% 50%;
-    text-shadow: 0 0 10px cyan;
-  }
 }
 .landingwrapper .info {
   margin-left: 2rem;
@@ -60,4 +28,10 @@
   top: 2%;
   right: 2%;
   position: absolute;
+}
+
+@media screen and (max-width: 425px) {
+  .landingwrapper .info h3 {
+    font-size: 1.5rem;
+  }
 }/*# sourceMappingURL=landing.css.map */

@@ -2,31 +2,29 @@
      display: flex;
      flex-direction: column;
      align-items: center;
-     justify-content: space-around;
-     min-height: 100vh ;
      padding: 1rem;
      height: 100% ;
      color: #fff;
-     background: #ffd400;
      position: relative;
+     gap: 2rem;
      .projectcssbtn{
           top: 2%;
           right: 2%;
           position: absolute;
        }
      .projectcards{
-          min-height: 70vh;
           width: 100%;
+          min-height: 60vh;
           display: flex;
           flex-wrap: wrap;
           justify-content: space-around;
           gap: 1.5rem;
+          padding: 0 1rem;
           .projectcard{
                flex-grow: 0;
                display: flex;
                flex-direction: column;
-               background: #ec0530;
-               box-shadow: 0 0 10px rgb(245, 221, 0) inset;
+               background: #2e2b2b5b;
                justify-content: center;
                padding: 1rem;
                border-radius: 10px;
@@ -36,6 +34,45 @@
                }
                &:hover{
                     flex-grow: 1;
+               }
+          }
+     }
+}
+
+@media screen and (max-width:425px) {
+     .projectWrapper{
+          .projectcards{
+               height: 50vh;
+               overflow-y: scroll;
+               &::-webkit-scrollbar{
+                    display: none;
+               }
+          }
+     }
+}
+@media screen and (max-width:375px) {
+     .projectWrapper{
+          .projectcards{
+               flex-wrap: nowrap;
+               overflow-x: scroll;
+               &::-webkit-scrollbar{
+                    display: none;
+               }
+               .projectcard{
+                    &:nth-child(3){
+                         margin-left: 1.5rem;
+                    }
+               }
+          }
+     }
+}
+@media screen and (max-width:320px) {
+     .projectWrapper{
+          .projectcards{
+               .projectcard{
+                    &:nth-child(3){
+                         margin-left: 5rem;
+                    }
                }
           }
      }
